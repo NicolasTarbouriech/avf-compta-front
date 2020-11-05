@@ -8,8 +8,8 @@ import { PageGestionClientComponent } from './Pages/page-gestion-client/page-ges
 const routes: Routes = [
 
 { path: '', component: PageAccueilComponent},
-{ path: '/accueil', component: PageAccueilComponent},
-{ path: '/clients', component: PageGestionClientComponent}
+{ path: 'accueil', component: PageAccueilComponent},
+{ path: 'clients', component: PageGestionClientComponent}
  
 
 ];
