@@ -1,10 +1,21 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule,Routes} from '@angular/router';
 
-const routes: Routes = [];
+/* IMPORTS PAGES */
+import { PageAccueilComponent } from './Pages/page-accueil/page-accueil.component';
+import { PageGestionClientComponent } from './Pages/page-gestion-client/page-gestion-client.component';
+
+const routes: Routes = [
+
+{ path: '', component: PageAccueilComponent},
+{ path: '/accueil', component: PageAccueilComponent},
+{ path: '/clients', component: PageGestionClientComponent}
+ 
+
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+ imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
